@@ -26,8 +26,7 @@ class TestFlightsTab:
             "Flights search form is not visible after clicking the tab"
 
     def test_no_other_tab_form_is_visible(self, flights_page, hotels_page):
-        """No other tab's content is shown at the same time."""
         flights_page.open()
-        # Hotels form should NOT be visible when Flights tab is active
-        assert not hotels_page.is_search_form_visible(), \
+        # Directly check the autosuggest container without clicking
+        assert not hotels_page.get_autosuggest_container().is_visible(), \
             "Hotels search form is visible while Flights tab is active — unexpected overlap"

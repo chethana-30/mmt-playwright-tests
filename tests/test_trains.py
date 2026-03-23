@@ -16,5 +16,5 @@ class TestTrainsTab:
 
     def test_no_other_tab_form_is_visible(self, trains_page, flights_page):
         trains_page.open()
-        assert not flights_page.is_search_form_visible(), \
+        assert not flights_page.get_autosuggest_container().is_visible(), \
             "Flights form visible while Trains tab is active"

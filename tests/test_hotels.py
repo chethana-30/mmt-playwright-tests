@@ -24,5 +24,5 @@ class TestHotelsTab:
 
     def test_no_other_tab_form_is_visible(self, hotels_page, flights_page):
         hotels_page.open()
-        assert not flights_page.is_search_form_visible(), \
-            "Flights search form is visible while Hotels tab is active — unexpected overlap"
+        assert not flights_page.get_autosuggest_container().is_visible(), \
+            "Flights form visible while Hotels tab is active"

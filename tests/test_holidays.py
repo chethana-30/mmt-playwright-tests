@@ -16,5 +16,5 @@ class TestHolidaysTab:
 
     def test_no_other_tab_form_is_visible(self, holidays_page, flights_page):
         holidays_page.open()
-        assert not flights_page.is_search_form_visible(), \
-            "Flights form visible while Holidays tab is active"
+        assert not flights_page.get_autosuggest_container().is_visible(), \
+             "Flights form visible while Holidays tab is active"
