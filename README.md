@@ -20,6 +20,8 @@ Then that tab should be active/selected
 And the search form relevant to that tab should be visible
 And no other tab's form should be visible
 
+```
+
 ##Project Structure
 
 ```
@@ -48,9 +50,11 @@ mmt-playwright-test/
 ├── pytest.ini # Pytest configuration
 └── README.md
 
-````
+```
 
 Prerequisites
+
+```
 Python 3.8 or higher
 pip (Python package manager)
 Note: If you are on macOS with a Homebrew-managed Python installation, pip will refuse system-wide installs. Always use a virtual environment as shown in the setup steps below to avoid this.
@@ -133,4 +137,3 @@ Running tests against a staging or UAT environment with no bot protection
 Using a residential proxy service
 Coordinating with the site owner for a test bypass header or allowlisted IP address
 ```
-````
