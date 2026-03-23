@@ -48,7 +48,7 @@ mmt-playwright-test/
 ├── pytest.ini # Pytest configuration
 └── README.md
 
-```
+````
 
 Prerequisites
 Python 3.8 or higher
@@ -133,3 +133,4 @@ Running tests against a staging or UAT environment with no bot protection
 Using a residential proxy service
 Coordinating with the site owner for a test bypass header or allowlisted IP address
 ```
+````
