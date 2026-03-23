@@ -1,4 +1,6 @@
 MakeMyTrip Navigation Tab Tests
+
+```
 Automated test suite for verifying homepage tab navigation on makemytrip.com, built with Python + Playwright using the Page Object Model (POM) pattern.
 
 Note on Language Choice: The exercise specified TypeScript/JavaScript with npx playwright test. This solution uses Python with pytest-playwright, which is the Python-native equivalent. The framework design, POM structure, and test coverage are identical in concept — only the language differs.
@@ -21,6 +23,7 @@ And no other tab's form should be visible
 ##Project Structure
 
 ```
+
 mmt-playwright-test/
 ├── pages/
 │ ├── base_page.py # Shared base class: navigation, popup handling
@@ -44,6 +47,7 @@ mmt-playwright-test/
 ├── conftest.py # Browser fixtures
 ├── pytest.ini # Pytest configuration
 └── README.md
+
 ```
 
 Prerequisites
@@ -128,3 +132,4 @@ In a professional CI/CD setup this would be resolved by:
 Running tests against a staging or UAT environment with no bot protection
 Using a residential proxy service
 Coordinating with the site owner for a test bypass header or allowlisted IP address
+```
